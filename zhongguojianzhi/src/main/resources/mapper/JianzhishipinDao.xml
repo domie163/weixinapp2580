@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.JianzhishipinDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        a.id as id
+        ,a.jianzhishipin_name as jianzhishipinName
+        ,a.jianzhishipin_photo as jianzhishipinPhoto
+        ,a.jianzhishipin_video as jianzhishipinVideo
+        ,a.jianzhishipin_types as jianzhishipinTypes
+        ,a.jianzhishipin_clicknum as jianzhishipinClicknum
+        ,a.jianzhishipin_delete as jianzhishipinDelete
+        ,a.jianzhishipin_content as jianzhishipinContent
+        ,a.create_time as createTime
+    </sql>
+    <select id="selectListView" parameterType="map" resultType="com.entity.view.JianzhishipinView" >
+        SELECT
+        <include refid="Base_Column_List" />
+
+--         级联表的字段
+
+        FROM jianzhishipin  a
+
+        <where>
+            <if test="params.ids != null">
+                and a.id in
+                <foreach item="item" index="index" collection="params.ids" open="(" separator="," close=")">
+                #{item}
+                </foreach>
+            </if>
+            <if test=" params.jianzhishipinName != '' and params.jianzhishipinName != null and params.jianzhishipinName != 'null' ">
+                and a.jianzhishipin_name like CONCAT('%',#{params.jianzhishipinName},'%')
+            </if>
+            <if test=" params.jianzhishipinVideo != '' and params.jianzhishipinVideo != null and params.jianzhishipinVideo != 'null' ">
+                and a.jianzhishipin_video like CONCAT('%',#{params.jianzhishipinVideo},'%')
+            </if>
+            <if test="params.jianzhishipinTypes != null and params.jianzhishipinTypes != ''">
+                and a.jianzhishipin_types = #{params.jianzhishipinTypes}
+            </if>
+            <if test="params.jianzhishipinClicknumStart != null and params.jianzhishipinClicknumStart != ''">
+                <![CDATA[  and a.jianzhishipin_clicknum >= #{params.jianzhishipinClicknumStart}   ]]>
+            </if>
+            <if test="params.jianzhishipinClicknumEnd != null and params.jianzhishipinClicknumEnd != ''">
+                <![CDATA[  and a.jianzhishipin_clicknum <= #{params.jianzhishipinClicknumEnd}   ]]>
+            </if>
+             <if test="params.jianzhishipinClicknum != null and params.jianzhishipinClicknum != ''">
+                and a.jianzhishipin_clicknum = #{params.jianzhishipinClicknum}
+             </if>
+            <if test="params.jianzhishipinDeleteStart != null and params.jianzhishipinDeleteStart != ''">
+                <![CDATA[  and a.jianzhishipin_delete >= #{params.jianzhishipinDeleteStart}   ]]>
+            </if>
+            <if test="params.jianzhishipinDeleteEnd != null and params.jianzhishipinDeleteEnd != ''">
+                <![CDATA[  and a.jianzhishipin_delete <= #{params.jianzhishipinDeleteEnd}   ]]>
+            </if>
+             <if test="params.jianzhishipinDelete != null and params.jianzhishipinDelete != ''">
+                and a.jianzhishipin_delete = #{params.jianzhishipinDelete}
+             </if>
+            <if test=" params.jianzhishipinContent != '' and params.jianzhishipinContent != null and params.jianzhishipinContent != 'null' ">
+                and a.jianzhishipin_content like CONCAT('%',#{params.jianzhishipinContent},'%')
+            </if>
+
+        </where>
+
+        order by a.${params.orderBy} desc 
+    </select>
+
+</mapper>

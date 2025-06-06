@@ -1,0 +1,235 @@
+{
+	"pages": [{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "登录"
+		}
+	},{
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "注册"
+		}
+	},{
+		"path": "pages/forget/forget",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "忘记密码"
+		}
+	},{
+		"path": "pages/center/center",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的"
+		}
+	},{
+		"path": "pages/user-info/userinfo",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户信息"
+		}
+	}
+		,{
+			"path": "pages/recharge/recharge",
+			"style": {
+				"navigationBarBackgroundColor": "#f06f4f",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "充值"
+			}
+		}
+
+ 	,{
+		"path": "pages/address/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "添加地址"
+		}
+	},{
+		"path": "pages/address/list",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的地址"
+		}
+	}
+	,{
+		"path": "pages/cart/list",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "购物车展示"
+		}
+	},{
+		"path": "pages/cart/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "购物车添加"
+		}
+	},{
+		"path": "pages/cart/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "购物车详情"
+		}
+	}
+	,{
+		"path": "pages/goods/list",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品展示"
+		}
+	},{
+		"path": "pages/goods/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品添加"
+		}
+	},{
+		"path": "pages/goods/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品详情"
+		}
+	}
+	,{
+		"path": "pages/goodsOrder/list",
+		"style": {
+			"navigationBarTitleText": "商品订单"
+		}
+	},{
+		"path": "pages/goodsOrder/confirm",
+		"style": {
+			"navigationBarTitleText": "订单确认"
+		}
+	}
+	,{
+		"path": "pages/jianzhishipin/list",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "剪纸教学视频展示"
+		}
+	},{
+		"path": "pages/jianzhishipin/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "剪纸教学视频添加"
+		}
+	},{
+		"path": "pages/jianzhishipin/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "剪纸教学视频详情"
+		}
+	}
+	,{
+		"path": "pages/news/list",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "剪纸历史展示"
+		}
+	},{
+		"path": "pages/news/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "剪纸历史添加"
+		}
+	},{
+		"path": "pages/news/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "剪纸历史详情"
+		}
+	}
+	,{
+		"path": "pages/yonghu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户展示"
+		}
+	},{
+		"path": "pages/yonghu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户添加"
+		}
+	},{
+		"path": "pages/yonghu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户详情"
+		}
+	}
+			,{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor": "#f06f4f",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "首页"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "中国剪纸微信小程序",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#d24a32",
+		"borderStyle": "black",
+		"backgroundColor": "#f06f4f",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/index.png",
+				"selectedIconPath": "static/tabs/index1.png",
+				"text": "首页"
+			}
+			,{
+				"pagePath": "pages/goods/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "商品"
+			}
+			,{
+				"pagePath": "pages/jianzhishipin/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "剪纸教学视频"
+			}
+			,{
+			 	"pagePath": "pages/news/list",
+				"iconPath": "static/tabs/order.png",
+			 	"selectedIconPath": "static/tabs/order1.png",
+				"text": "剪纸历史"
+			}
+			,{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabs/mine.png",
+				"selectedIconPath": "static/tabs/mine1.png",
+				"text": "我的"
+			}
+		]
+	}
+}
